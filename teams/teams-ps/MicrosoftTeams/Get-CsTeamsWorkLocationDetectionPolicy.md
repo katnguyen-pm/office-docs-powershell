@@ -30,7 +30,7 @@ Get-CsTeamsWorkLocationDetectionPolicy [-Filter <String>] [<CommonParameters>]
 ## DESCRIPTION
 Fetches instances of TeamsWorkLocationDetectionPolicy. Each policy object contains the following properties:
 
-- `EnableWorkLocationDetection`: This setting allows your organization to collect the work location of users when they connect, interact, or are detected near your organization's networks and devices. It also captures the geographic location information users share from personal and mobile devices. This gives users the ability to consent to the use of this location data to set their current work location. Microsoft collects this information to provide users with a consistent location-based experience and to improve the hybrid work experience in Microsoft 365 according to the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
+- `EnableWorkLocationDetection`: The parameter specifies whether Microsoft Teams determines a user’s work location based on interaction with organization‑managed networks and devices. When enabled, Teams sets the user’s current work location using signals from administrator‑configured resources, such as desks or peripherals managed by the organization. This parameter does not collect or use geographic location data from users’ personal or mobile devices. Location information is used to support consistent location‑based experiences in Microsoft Teams and Microsoft 365 and is processed in accordance with the Microsoft Privacy Statement. 
 
 - `UserSettingsDefault`: Specifies the default user settings behavior for work location detection. Possible values are `Disabled` (default) and `Enabled`.
 
